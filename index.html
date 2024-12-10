@@ -14,90 +14,138 @@
             line-height: 1.6;
         }
         header {
-            background: #e74c3c;
+            background: #109045;
             color: #fff;
-            padding: 20px 10px;
+            padding: 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         header p {
-            margin: 5px 0 0;
-            font-size: 1rem;
+            margin: 10px 0 0;
+            font-size: 1.2rem;
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background: #fff;
+            background: #ffffff;
+            border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
         }
-        .link {
-            display: flex;
-            align-items: center;
+        .button {
+            display: block;
             text-decoration: none;
-            background: #e74c3c;
-            color: #fff;
+            background: #f5f5f5;
+            color: #333;
             padding: 15px;
             margin: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+        .button:hover {
+            background: #eaeaea;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .reviews-section {
+            margin-top: 40px;
+        }
+        .review-group {
+            margin-bottom: 20px;
+        }
+        .review-title {
+            font-size: 1.5rem;
+            color: #109045;
+            margin-bottom: 10px;
+        }
+        .review {
+            margin-bottom: 15px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .review strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1rem;
+            color: #ec1b24;
+        }
+        .stars {
+            color: #ffd700;
+        }
+		.highlight {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background: #ec1b24;
+            color: #fff;
             border-radius: 5px;
             font-size: 1.2rem;
-            transition: background 0.3s;
-        }
-        .link:hover {
-            background: #c0392b;
-        }
-        .link i {
-            margin-right: 10px;
-            font-size: 1.5rem;
         }
         footer {
             text-align: center;
             margin-top: 20px;
-            padding: 10px 0;
+            padding: 15px 0;
             font-size: 0.9rem;
             color: #666;
         }
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            .link {
-                font-size: 1rem;
-                padding: 12px;
-            }
-            .link i {
-                font-size: 1.2rem;
-            }
-        }
     </style>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <h1>Desi Dragon & House of Biryani and Curries</h1>
-        <p>Authentic flavors for every occasion</p>
+        <p>Order directly with us and save more!</p>
     </header>
     <div class="container">
-        <a href="https://www.desidragon.co.uk" target="_blank" class="link">
-            <i class="fas fa-utensils"></i> Visit Desi Dragon
-        </a>
-        <a href="https://www.desidragon.co.uk" target="_blank" class="link">
-            <i class="fas fa-pepper-hot"></i> Visit House of Biryani and Curries
-        </a>
-        <a href="tel:+447769984078" class="link">
-            <i class="fas fa-phone"></i> Call Us for Support: +44 7769 984078
-        </a>
-        <a href="https://wa.me/447769984078?text=Hello,%20I%20would%20like%20to%20inquire%20about%20catering%20services." 
-           target="_blank" class="link">
-            <i class="fab fa-whatsapp"></i> WhatsApp Us for Catering Requests
-        </a>
+        <div class="highlight">
+            <strong>Save Offers!</strong>
+            <p>Get exclusive offers up to 20% off or Buy 1 Get 1 free when you order directly from our websites.</p>
+        </div>
+        <a href="https://www.desidragon.co.uk" target="_blank" class="button">Order from Desi Dragon</a>
+        <a href="https://www.hbconline.co.uk" target="_blank" class="button">Order from House of Biryani and Curries</a>
+        <a href="tel:+447769984078" class="button">Call Us: +44 7769 984078</a>
+        <a href="https://wa.me/447769984078?text=Hello,%20I%20would%20like%20to%20inquire%20about%20catering%20services." target="_blank" class="button">WhatsApp Us for Catering</a>
+
+        <div class="reviews-section">
+            <div class="review-group">
+                <div class="review-title">Desi Dragon Reviews</div>
+                <div class="review">
+                    <strong>★★★★★</strong>
+                    <p>Ordered our meals through Uber Eats. Desi Dragon is the perfect place to order from if you love good Indian Chinese cuisine! Exactly how you'd get it in India. Lovely experience with complimentary Chicken 65. Happy days!</p>
+                </div>
+                <div class="review">
+                    <strong>★★★★★</strong>
+                    <p>If you're on the hunt for exceptionally good food that blends Indian and Chinese cuisines, look no further. The Hakka Noodles and chilly garlic noodles are a must-try. Generous portions, reasonable pricing, and a complimentary Chicken 65. Highly recommended!</p>
+                </div>
+                <div class="review">
+                    <strong>★★★★★</strong>
+                    <p>Hands down the best HALAL Indo-Chinese place! Flavors are 10/10, perfectly balanced, and not greasy. Value for money, too. Try the chili & garlic noodles for a kick!</p>
+                </div>
+            </div>
+
+            <div class="review-group">
+                <div class="review-title">House of Biryani and Curries Reviews</div>
+                <div class="review">
+                    <strong>★★★★★</strong>
+                    <p>The food was absolutely amazing—felt just like authentic home-cooked meals from India. Every bite was comforting and full of flavor. A must-visit for proper authentic Indian recipes.</p>
+                </div>
+                <div class="review">
+                    <strong>★★★★★</strong>
+                    <p>I have tried their HBC SPL Chicken Biryani and Paneer Biryani. Both were freshly made and flavorful. Loved their Shahi Tukda and Gulab Jamun. Excellent service from Kritish. Will keep ordering!</p>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         &copy; 2024 Desi Dragon & House of Biryani and Curries | All Rights Reserved
+        <br>
+        <a href="https://www.google.com/maps/place/Desi+Dragon" target="_blank">Leave a Review for Desi Dragon</a> |
+        <a href="https://maps.google.com" target="_blank">Leave a Review for House of Biryani and Curries</a>
     </footer>
 </body>
 </html>
