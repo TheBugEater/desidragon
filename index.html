@@ -11,6 +11,7 @@
             padding: 0;
             background: #f8f9fa;
             color: #333;
+            line-height: 1.6;
         }
         header {
             background: #e74c3c;
@@ -35,19 +36,23 @@
             border-radius: 10px;
         }
         .link {
-            display: block;
+            display: flex;
+            align-items: center;
             text-decoration: none;
             background: #e74c3c;
             color: #fff;
             padding: 15px;
             margin: 10px 0;
-            text-align: center;
             border-radius: 5px;
             font-size: 1.2rem;
             transition: background 0.3s;
         }
         .link:hover {
             background: #c0392b;
+        }
+        .link i {
+            margin-right: 10px;
+            font-size: 1.5rem;
         }
         footer {
             text-align: center;
@@ -56,16 +61,40 @@
             font-size: 0.9rem;
             color: #666;
         }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .link {
+                font-size: 1rem;
+                padding: 12px;
+            }
+            .link i {
+                font-size: 1.2rem;
+            }
+        }
     </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <h1>Desi Dragon & House of Biryani and Curries</h1>
-        <p>Your favorite destinations for authentic flavors</p>
+        <p>Authentic flavors for every occasion</p>
     </header>
     <div class="container">
-        <a href="https://www.desidragon.co.uk" target="_blank" class="link">Visit Desi Dragon</a>
-        <a href="https://www.desidragon.co.uk" target="_blank" class="link">Visit House of Biryani and Curries</a>
+        <a href="https://www.desidragon.co.uk" target="_blank" class="link">
+            <i class="fas fa-utensils"></i> Visit Desi Dragon
+        </a>
+        <a href="https://www.desidragon.co.uk" target="_blank" class="link">
+            <i class="fas fa-pepper-hot"></i> Visit House of Biryani and Curries
+        </a>
+        <a href="tel:+447769984078" class="link">
+            <i class="fas fa-phone"></i> Call Us for Support: +44 7769 984078
+        </a>
+        <a href="https://wa.me/447769984078?text=Hello,%20I%20would%20like%20to%20inquire%20about%20catering%20services." 
+           target="_blank" class="link">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us for Catering Requests
+        </a>
     </div>
     <footer>
         &copy; 2024 Desi Dragon & House of Biryani and Curries | All Rights Reserved
